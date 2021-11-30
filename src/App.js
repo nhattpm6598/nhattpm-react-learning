@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Ninja_function from "./Ninja_function";
+import Ninja_class from "./Ninja_class";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const html = (
+  <div className="App">
+    <Ninja_function></Ninja_function>
+    <Ninja_class></Ninja_class>
+  </div>
   );
+  return html;
 }
 
 export default App;
